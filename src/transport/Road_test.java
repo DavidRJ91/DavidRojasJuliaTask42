@@ -9,5 +9,12 @@ public class Road_test {
         myRoad.addVehicle(20000);
         myRoad.addVehicle(15000);
         myRoad.addVehicle(4000);
+
+        Vehicle Camion = myRoad.getVehicle(3);
+        Camion.addBox(1000);
+        Camion.addBox(2000);
+        Camion.addBox(2000);
+        System.out.println(myRoad.getVehicle(3));
+
     }
 }
