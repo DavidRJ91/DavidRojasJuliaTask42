@@ -6,18 +6,17 @@ public class Road {
     private int numberOfVehicles;
 
     public Road() {
-        this.Nvehicles = new Vehicle[5];
+        Nvehicles = new Vehicle[5];
         numberOfVehicles = 0;
         System.out.println("Hay " + getNumberOfVehicles() + " camiones en la carretera.");
 
     }
 
     public boolean addVehicle (double MaxLoad){
-        if (numberOfVehicles < this.Nvehicles.length){
+        if (numberOfVehicles < Nvehicles.length){
             Nvehicles [numberOfVehicles] = new Vehicle(MaxLoad);
             numberOfVehicles++;
             System.out.println("El camion numero "+numberOfVehicles+" con "+MaxLoad+" KG de carga");
-
             return true;
         }
         else{
@@ -30,9 +29,9 @@ public class Road {
         return numberOfVehicles;
     }
 
-    public Vehicle getVehicle(int j){
-        if(j < Nvehicles.length) {
-            return Nvehicles[j];
+    public Vehicle getVehicle(int x){
+        if(x < Nvehicles.length) {
+            return Nvehicles[x];
         }
         else{
             return null;
