@@ -19,22 +19,16 @@ public class Road {
             System.out.println("El camion numero "+numberOfVehicles+" con "+MaxLoad+" KG de carga");
             return true;
         }
-        else{
-            System.out.println("ERROR: En esta carretera solo pueden ir 5 vehiculos.");
+        else{System.out.println("ERROR: En esta carretera solo pueden ir 5 vehiculos.");
             return false;
         }
     }
+    public int getNumberOfVehicles (){return numberOfVehicles;}
 
-    public int getNumberOfVehicles (){
-        return numberOfVehicles;
-    }
-
-    public Vehicle getVehicle(int x){
-        if(x < Nvehicles.length) {
-            return Nvehicles[x];
+    public Vehicle getVehicle(int y){ 
+        if(y < Nvehicles.length) {
+            return Nvehicles[y];
         }
-        else{
-            return null;
-        }
+        else{return null;}
     }
 }
