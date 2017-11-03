@@ -26,8 +26,5 @@ public class Road_test {
         System.out.println("Ya hemos cargado el camion numero 2");
 
         System.out.println("La carga total del camion es "+ camion.getLoad() + " KG");
-
-
-
     }
 }
