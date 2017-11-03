@@ -1,9 +1,6 @@
 package transport;
 
 public class Vehicle {
-    /**
-     * Metodos utilizados
-     */
 
     private double load;
     private double maxLoad;
@@ -20,9 +17,6 @@ public class Vehicle {
         return maxLoad;
     }
 
-    /**
-     * Aqui declaramos las cargas del camion
-     */
 
     public boolean addBox(double weight) {
 
@@ -36,9 +30,3 @@ public class Vehicle {
         }
     }
 }
-
-
-/**
- * David Rojas Julia
- * 2º ASIX
- */
