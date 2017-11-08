@@ -1,17 +1,21 @@
 package transport;
 
+/* Creamos la clase Road*/
 
 public class Road {
     private Vehicle[] Nvehicles;
     private int numberOfVehicles;
-
+    
+/* Creamos el constructor Road */
+    
     public Road() {
         Nvehicles = new Vehicle[5];
         numberOfVehicles = 0;
         System.out.println("Hay " + getNumberOfVehicles() + " camiones en la carretera.");
 
     }
-
+/* Creacion de metodos */
+    
     public boolean addVehicle (double MaxLoad){
         if (numberOfVehicles < Nvehicles.length){
             Nvehicles [numberOfVehicles] = new Vehicle(MaxLoad);
@@ -32,3 +36,6 @@ public class Road {
         else{return null;}
     }
 }
+
+/* David Rojas Julia */
+/* 2º Asix */
