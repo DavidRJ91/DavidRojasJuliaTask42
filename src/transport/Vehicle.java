@@ -1,6 +1,10 @@
 package transport;
 
 public class Vehicle {
+    
+    /**
+     * Metodos utilizados
+     */
 
     private double load;
     private double maxLoad;
@@ -16,7 +20,9 @@ public class Vehicle {
     public double getMaxLoad() {
         return maxLoad;
     }
-
+ /**
+    * Aqui declaramos las cargas del camion
+     */
 
     public boolean addBox(double weight) {
 
